@@ -1,4 +1,6 @@
 const sumAll = function(a, b) {
+   if (!Number.isInteger(a) || !Number.isInteger(b)) return 'ERROR';
+   if (a <= 0 || b <= 0) return 'ERROR';
    const sumA = (a**2+a)/2;
    const sumB = (b**2+b)/2;
    let sum = 0;
